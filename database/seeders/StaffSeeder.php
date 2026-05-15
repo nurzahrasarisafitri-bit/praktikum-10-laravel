@@ -12,7 +12,7 @@ class StaffSeeder extends Seeder
             DB::table('staff')->insert(
                 [
                     'nip' => fake()->unique()->numerify('###'),
-                    'name' => uniqid('nama_'),
+                    'name' => uniqid('name_'),
                     'alamat' => uniqid('alamat_'),
                     'email' => uniqid() . '@gmail.com',
                     'foto' => '',
